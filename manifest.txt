@@ -1,0 +1,2 @@
+Main-Class: com.posgateway.PosGatewayApp
+Class-Path: . javafx-controls.jar javafx-fxml.jar javafx-graphics.jar javafx-base.jar 

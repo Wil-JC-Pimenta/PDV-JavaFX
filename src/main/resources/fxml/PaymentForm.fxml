@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.posgateway.controller.PaymentController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <Label text="Sistema de Pagamento" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    
+    <GridPane vgap="10" hgap="10">
+        <Label text="Valor:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="amountField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        
+        <Label text="ID do Pedido:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="orderIdField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        
+        <Button text="Processar Pagamento" onAction="#processPayment" 
+                GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    </GridPane>
+    
+    <TextArea fx:id="logArea" prefHeight="200" editable="false"/>
+</VBox> 
