@@ -1,6 +1,6 @@
 **Projeto de Estudo**
 
-# POS Gateway - Sistema de Pagamento
+# PDV JavaFX
 
 Sistema de processamento de pagamentos desenvolvido em JavaFX que simula uma interface de PDV (Point of Sale).
 
